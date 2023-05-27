@@ -1,19 +1,17 @@
 #include <Arduino.h>
-#include <Wire.h>
+#include <U8g2lib.h>
+
+U8G2_ST7565_ERC12864_ALT_F_4W_SW_SPI u8g2(U8G2_R0, /*SCL*/ 13, /*SI*/ 11, /*CS*/ 10, /*RS*/ 9, /*RES*/ 8);
 
 
 
 void setup() {
 
-    pinMode(4,OUTPUT);
 
   
 }
 
 void loop() {
 
-    digitalWrite(4,HIGH);
-    delay(5000);
-    digitalWrite(4,LOW);
-    delay(5000);
+    
 }
