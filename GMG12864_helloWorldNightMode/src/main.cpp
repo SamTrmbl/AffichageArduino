@@ -10,19 +10,13 @@ void setup() {
     u8g2.begin();
     u8g2.setContrast(100); //valeur entre 0 et 255
 
-    u8g2.setFont(u8g2_font_ncenB08_tr);	//Choisir une police, voir le wiki pour les choix
-
-
   
 }
 
 void loop() {
-    u8g2.clearBuffer();					//Vide la mémoire interne
+    u8g2.clearBuffer();					// Vide la mémoire interne
 
-    u8g2.setDrawColor(1);               // 1= foncé
-    u8g2.drawBox(0,0,128,64);           //On dessine un carré qui fait tout l'écran
-
-    u8g2.setDrawColor(0);               // 0 = blanc
+    u8g2.setFont(u8g2_font_ncenB08_tr);	//Choisir une police, voir le wiki pour les choix
 
     u8g2.setCursor(5,32);               //Placer le curseur au pixel 5,32 (Sur un total de 128x64)
     u8g2.print("Hello World!");     	//On met le texte dans la mémoire interne
